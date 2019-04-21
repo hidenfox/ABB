@@ -9,8 +9,11 @@ services:
       - backend
     ports:
       - "80:80"
+      - "443:443"
     volumes:
       - /var/logs/nginx:/var/logs/nginx/
+      - /docker/conf.d/:/etc/nginx/conf.d
+      - /docker/ssl/:/etc/nginx/ssl
     network_mode: "host"    
   backend:
     restart: always
