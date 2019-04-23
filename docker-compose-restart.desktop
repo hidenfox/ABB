@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Compose Restart
+Comment=
+Exec=/docker/composeRestart.sh
+Icon=system-reboot
+Path=/docker
+Terminal=false
+StartupNotify=false

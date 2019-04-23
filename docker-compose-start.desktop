@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=docker-compose up
+Comment=Docker Compose start
+Exec=/docker/composeUp.sh
+Icon=audio-player
+Path=/docker
+Terminal=false
+StartupNotify=false

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=docker-compose stop
+Comment=stop docker compose
+Exec=/docker/composeStop.sh
+Icon=preferences-system-power
+Path=/docker
+Terminal=false
+StartupNotify=false

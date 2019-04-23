@@ -21,7 +21,7 @@ services:
     depends_on:
       - mongodb
     ports:
-      - "3000:3000"
+      - "3001:3000"
     environment:   
       - MONGO_HOST=qrt_db_cloud:27017
       - MONGO_DB_NAME=measurements

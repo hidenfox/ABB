@@ -1,0 +1,11 @@
+[Unit]
+Description=Start x11vnc at startup.
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/x11vnc -connect 10.8.0.1:5901 -env NECTION_NO_AUTH=1 -display :0 -auth /var/run/slim.auth -repeat -loopbg3000 -xkb -noxrecord -noxfixes -noxdamage -shared -bg -forever -query_retries 3 -env XAUTHLOCALHOSTNAME=localhost 
+
+[Install] 
+WantedBy=multi-user.target
+
