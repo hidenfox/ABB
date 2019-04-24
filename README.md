@@ -1,7 +1,7 @@
 # ABB
 
 ##Q5 hardering
-*disable tcp wrappers if they are not needed
+* disable tcp wrappers if they are not needed
 *close all incoming port son the firewall opening only 22,80,443 if they are needed
 *Dissable root login on ssh but on ubuntu is by default
 *Enable passwordless login on sshd
