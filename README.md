@@ -19,21 +19,21 @@
 * Disable the information leakage with server_token off;
 * Protec agains cross-site scriptin atack with add_header X-XSS-Protection "1;mode=block";
 * Disable undesirable http methos llike DELETE or TRACE 
-'''
+```
     if ($request_method !~ ^(GET|HEAD|POST)$ )
     {
          return 405;
     }
- '''
+ ```
 * Prevent Clickjacking attack with   add_header X-Frame-Options "SAMEORIGIN";
 * Add valid certicates o create a own CA to generate well know certs
 --OS linux
 * Remove un necesary software like 
- '''xinetd nis yp-tools tftpd atftpd tftpd-hpa telnetd rsh-server rsh-redone-server'''
+ ```xinetd nis yp-tools tftpd atftpd tftpd-hpa telnetd rsh-server rsh-redone-server```
 * Locking User Accounts After Login Failures with faillog
 * Disable Unwanted Linux Services
 * Test some Linux Kernel /etc/sysctl.conf Hardening like I say test because in some cases could be not posible
-'''
+```
 # Turn on execshield
 kernel.exec-shield=1
 kernel.randomize_va_space=1
@@ -47,4 +47,4 @@ net.ipv4.icmp_ignore_bogus_error_messages=1
 # Make sure spoofed packets get logged
 net.ipv4.conf.all.log_martians = 1
 Turn off IPV6 if not used
-'''
+```
