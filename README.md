@@ -8,7 +8,7 @@
 ### Q3 Web app optimization
 * The conf.d and the ssl directories are mounted on the docker frontend, the conf.d is configured intercepting port 3000 and redirect to the backed who is listening on 3001.  I decide this solution because it needs a minum changes and I don't need to touch the backend code 
 ### Q4 Linux Networking
-* After to fight with stunnel configuration I decide to will be easy and more secure configure an openvpn and the vnc configured on mode reverse the viewer must be started as a listener I store the files on de Q4 directory 
+* My first option was to use https://www.dwservice.net/en/home.html it provides all you want, but it must be a cheat and it was not a networking task, for this reason and  After to fight with stunnel configuration I decide to will be easy and more secure configure an openvpn and the vnc configured on mode reverse the viewer must be started as a listener I store the files on de Q4 directory 
 ### Q5 Linux Hardening
 * disable tcp wrappers if they are not needed
 * close all incoming port on the firewall opening only 22,80,443 if they are needed
